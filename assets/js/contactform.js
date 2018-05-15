@@ -1,6 +1,10 @@
 jQuery(document).ready(function($) {
   "use strict";
-
+  $(function () {
+    let	thisyear = new Date().getFullYear();
+      $('#currentyear').text(thisyear);
+      });
+  
   //Contact
   $('form.contactForm').submit(function() {
     var f = $(this).find('.form-group'),
