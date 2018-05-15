@@ -1161,7 +1161,7 @@ a.btn:focus{
 }
 @media (max-width:768px) {
 	#navigation {
-		padding: 20px 0;
+		/* padding: 20px 0; */
 	}
 	.site-logo{
 		margin: 0 0 0 30px;
@@ -1175,7 +1175,6 @@ a.btn:focus{
 
 	}
 	.navbar-header {
-		margin-top:-40px;
 		padding:0;
 	}
 	.navbar-header button {
@@ -4876,7 +4875,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar {
   position: relative;
   min-height: 50px;
-  margin-bottom: 20px;
   border: 1px solid transparent;
 }
 @media (min-width: 768px) {
