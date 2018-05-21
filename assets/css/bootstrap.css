@@ -276,7 +276,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  /* color: #333; */
   background-color: #fff;
 }
 input,
@@ -756,11 +756,27 @@ pre code {
   .container {
     width: 750px;
   }
+  .navbar-custom ul.nav li a {
+    font-size: 13px;
+    letter-spacing: 1px;
+      color: #444;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
 }
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
+  .navbar-custom ul.nav li a {
+    font-size: 15px;
+    letter-spacing: 1px;
+      color: #444;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
 }
 @media (min-width: 1200px) {
   .container {
@@ -940,6 +956,7 @@ pre code {
   margin-left: 0;
 }
 @media (min-width: 768px) {
+
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -2031,7 +2048,6 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #333;
   text-decoration: none;
 }
 .btn:active,
@@ -2352,10 +2368,14 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 3px;
 }
 .btn-block {
+  font-weight: 600;
   display: block;
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+    width: 100%;
+    /* line-height: 90; */
+    padding-right: 0;
+    padding-left: 0;
+    color: white;
+    background-color: #404040;
 }
 .btn-block + .btn-block {
   margin-top: 5px;

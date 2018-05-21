@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900);@import url(https://fonts.googleapis.com/css?family=Ek+Mukta:400,600,700);/*
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700,900);@import url(https://fonts.googleapis.com/css?family=Lato);/*
     Theme Name: Shuffle
     Theme URL: https://bootstrapmade.com/bootstrap-3-one-page-template-free-shuffle/
     Author: BootstrapMade
@@ -6,6 +6,9 @@
 */
 /* ==== Google font ==== */
 
+container {
+	font-family: 'Lato', sans-serif;
+}
 .dialog-background{
     height: 100%;
     left: 0;
@@ -56,7 +59,7 @@
 .topN {
     width: 100%;
     height: 100%;
-    font-family: 'Ek Mukta', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 300;
     color: #666;
     background-color: #fff;
@@ -96,7 +99,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 30px;
-    font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
     font-weight: 400;
 	color: #111;
 }
@@ -124,7 +127,7 @@ h1.font-light,h2.font-light,h3.font-light,h4.font-light,h5.font-light,h6.font-li
 
 p {
     margin: 0 0 20px;
-
+	font-family: 'Lato', sans-serif;
 }
 
 p.lead {
@@ -203,7 +206,7 @@ blockquote strong {
 	color: #111;
 	text-transform: uppercase;
 	font-size: 32px;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Lato', sans-serif;
 	font-weight: 900;
 }
 
@@ -242,7 +245,7 @@ blockquote strong {
 
 
 .navbar-custom ul.nav li a {
-	font-size: 12px;
+	font-size: 19px;
 	letter-spacing: 1px;
     color: #444;
 	text-transform: uppercase;
@@ -726,9 +729,11 @@ b{
 --- Services
 ============================ */
 .service-box {
-	background: #fff;
-	border: 1px solid #f7f7f7;
-	padding: 20px;
+    background: #fff;
+    border: 1px solid grey;
+    padding: 20px;
+    border-radius: 64px;
+    height: 588px;
 }
 
 .service-icon {
@@ -760,7 +765,10 @@ b{
 --- Contact
 ============================ */
 
+.second{
 
+	font-size: 18px;
+}
 .form-group {
   margin-bottom: 20px;
 }
@@ -780,8 +788,10 @@ form#contact-form input,form#contact-form select,form#contact-form textarea {
 	border-radius: 2px;
 }
 
-.btn-lg,
-.btn-group-lg > .btn {
+.btn-sm,
+.btn-group-sm > .btn {
+	color: grey!important;
+	border-color:grey!important;
   border-radius: 2px;
 }
 
@@ -884,8 +894,8 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 
 .widget.widget_categories ul li:before {
 	display: inline-block;
-	font-family: 'Pe-icon-7-stroke';
-	speak: none;
+	font-family: 'Lato', sans-serif;
+		speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -922,6 +932,12 @@ form#contact-form input:focus,form#contact-form select:focus,form#contact-form t
 .widget.widget_recent_post ul li span {
 	font-size: 14px;
 }
+.fontContact{
+    font-family: sans-serif;
+    font-weight: 100;
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 32px;}
 
 .widget .tagcloud a {
 	padding: 4px 10px;
@@ -1125,7 +1141,6 @@ a.btn:focus{
 @media(min-width:767px) {
 
     .navbar {
-        padding: 20px 0;
         border-bottom: 0;
         letter-spacing: 1px;
         background: 0 0;
@@ -1496,7 +1511,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
-  color: #333;
+  /* color: #333; */
   background-color: #fff;
 }
 input,
@@ -1976,11 +1991,27 @@ pre code {
   .container {
     width: 750px;
   }
+  .navbar-custom ul.nav li a {
+    font-size: 13px;
+    letter-spacing: 1px;
+      color: #444;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
 }
 @media (min-width: 992px) {
   .container {
     width: 970px;
   }
+  .navbar-custom ul.nav li a {
+    font-size: 15px;
+    letter-spacing: 1px;
+      color: #444;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
 }
 @media (min-width: 1200px) {
   .container {
@@ -2160,6 +2191,7 @@ pre code {
   margin-left: 0;
 }
 @media (min-width: 768px) {
+
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
   }
@@ -3251,7 +3283,6 @@ select[multiple].input-lg {
 }
 .btn:hover,
 .btn:focus {
-  color: #333;
   text-decoration: none;
 }
 .btn:active,
@@ -3572,10 +3603,14 @@ fieldset[disabled] .btn-link:focus {
   border-radius: 3px;
 }
 .btn-block {
+  font-weight: 600;
   display: block;
-  width: 100%;
-  padding-right: 0;
-  padding-left: 0;
+    width: 100%;
+    /* line-height: 90; */
+    padding-right: 0;
+    padding-left: 0;
+    color: white;
+    background-color: #404040;
 }
 .btn-block + .btn-block {
   margin-top: 5px;
