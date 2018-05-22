@@ -1102,7 +1102,8 @@ a.btn:focus{
 .btn-skin:hover,
 .btn-skin:focus,
 .btn-skin:active,
-.btn-skin.active {
+.btn-skin.active ,
+{
   color: #fff;
   background-color: #666;
   border-color: #666;
